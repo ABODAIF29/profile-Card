@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:wght@700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@500;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+body {
+    background-color: var(--Dark-cyan);
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: right 48vw bottom 40vh, left 50vw top 40vh;
+}
+.container {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.container .victor {
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    bottom: 50%;
+}
+.container .victor img {
+    border-radius: 50%;
+    border: 5px solid white;
+}
+.container .name {
+    color: var(--Very-dark-desaturated-blue);
+    text-align: center;
+    font-size: 20px;
+    margin-top: 60px;
+}
+.container .name span {
+    color: var(--Dark-gray);
+    font-weight: 500;
+    margin-left: 5px;
+}
+.container .city {
+    color: var(--Dark-gray);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+hr {
+    border: none;
+    height: 1px;
+    background-color:  var(--Dark-gray);
+    margin-bottom: 15px  
+}
+.container .details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+.container .details .num {
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.container .details .details-1 {
+    color: var(--Dark-gray);
+    text-align: center;
+    font-weight: 100;
+    font-size: 15px;
+    margin-bottom: 3px;
+    
+}
+
